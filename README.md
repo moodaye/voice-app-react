@@ -33,6 +33,16 @@ npm run dev
 
 Frontend runs on Vite default port (usually `5173`) and calls backend at `http://localhost:4000`.
 
+## Deployment (GitHub Pages)
+
+This repo includes a workflow at `.github/workflows/deploy.yml` that builds the frontend on every push to `main` and deploys `dist` to GitHub Pages.
+
+Expected site URL:
+
+`https://moodaye.github.io/voice-app-react/`
+
+In GitHub repo settings, ensure Pages source is set to **GitHub Actions**.
+
 ## API
 
 ### `POST /api/voice-command`
